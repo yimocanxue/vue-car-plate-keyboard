@@ -1,0 +1,21 @@
+{
+  "name": "vue-car-plate-keyboard",
+  "version": "1.0.0",
+  "description": "A vehicle license plate number keyboard",
+  "main": "dist/index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "car",
+    "plate",
+    "keyboard"
+  ],
+  "author": "david.xu <xuh86@126.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yimocanxue/vue-car-plate-keyboard.git"
+  }
+}
