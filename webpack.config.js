@@ -26,7 +26,7 @@ const webpackConfig = {
         }
       
     },
-    devtool: isProduction ? '#source-map' : 'cheap-eval-source-map',
+    devtool: isProduction ? '#source-map' : '#cheap-eval-source-map',
     module: {
         rules: [
             {
@@ -54,7 +54,8 @@ const webpackConfig = {
                 test: /\.css$/,
                 use: [
                     lastCssLoader,
-                    'css-loader'
+                    'css-loader',
+                    'postcss-loader'
                 ]
             },
             // 它会被应用到普通的`.sass`文件和`.vue`文件的<style lang="scss">块
@@ -63,6 +64,7 @@ const webpackConfig = {
                 use: [
                     lastCssLoader,
                     'css-loader',
+                    'postcss-loader',
                     {
                         loader: 'sass-loader',
                         options: {
@@ -109,11 +111,11 @@ const devConfig = {
 };
 const prodPlugins = [
     new MiniCssExtractPlugin({
-        filename: '[name].css',
-        chunkFilename: '[id].name'
+        filename: "styles.css"
     })
 ];
-const prodConfig = {};
+const prodConfig = {
+};
 webpackConfig.plugins.push(...(isProduction ? prodPlugins : devPlugins));
 
 Object.assign(webpackConfig, isProduction ? prodConfig : devConfig);
@@ -126,6 +128,5 @@ if (isProduction) {
     webpackConfig.output.umdNamedDefine = true;
 }
 
-console.log(webpackConfig);
 
 module.exports = webpackConfig

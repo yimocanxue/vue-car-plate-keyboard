@@ -1,7 +1,9 @@
-import inputBox from './carNumberBox';
+import carNumberBox from './carNumberBox';
+import carKeyboard from './carKeyboard';
 
 export default {
     install: function (Vue, options) {
-        Vue.component(inputBox.name, inputBox);
+        Vue.component(carNumberBox.name, carNumberBox);
+        Vue.component(carKeyboard.name, carKeyboard);
     }
 }
