@@ -1,5 +1,7 @@
 A vehicle license plate number keyboard
 
+![demo image](./demo.gif)
+
 # Requirements
 
 - Vue.js 2.x

@@ -15,16 +15,18 @@
   </style>
   <body>
     <div id="app">
-      <car-plate-keyboard 
-        car-number="苏E55552学"
-        active-color="#ff0000"
-        ok-btn-text="关闭"
-        v-on:tap-key="tapedKey"
-        v-on:tap-box="tapedBox"
-        v-on:tap-del="tapedDel"
-        v-on:tap-ok="tapedOk"
-      ></car-plate-keyboard>
-        {{message}}
+      <div style="padding: 10px;">
+        <span>请输入车牌号</span>
+        <car-plate-keyboard 
+          car-number="苏"
+          active-color="#1a84e7"
+          ok-btn-text="关闭"
+          v-on:tap-key="tapedKey"
+          v-on:tap-box="tapedBox"
+          v-on:tap-del="tapedDel"
+          v-on:tap-ok="tapedOk"
+        ></car-plate-keyboard>
+      </div>
     </div>
     <!-- built files will be auto injected -->
   </body>
