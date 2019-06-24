@@ -1,6 +1,8 @@
 A vehicle license plate number keyboard
 
-![demo image](./demo.gif)
+<center>![demo image](./demo.gif)</center>
+
+
 
 # Requirements
 
