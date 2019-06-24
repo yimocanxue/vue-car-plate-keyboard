@@ -1,6 +1,6 @@
 {
   "name": "vue-car-plate-keyboard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A vehicle license plate number keyboard",
   "main": "dist/index.js",
   "private": false,
