@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueCarPlateKeyboard from './lib/index';
-//import VueCarPlateKeyboard from 'vue-car-plate-keyboard';
 
 Vue.config.productionTip = false;
 Vue.use(VueCarPlateKeyboard);
@@ -10,5 +9,19 @@ new Vue({
         return {
             message: 'hello vue!'
         }
+    },
+    methods: {
+        tapedKey (data) {
+            console.log(data);
+        },
+        tapedBox (data) {
+            console.log(data);
+        },
+        tapedDel (data) {
+            console.log(data);
+        },
+        tapedOk (data) {
+            console.log(data);
+        } 
     }
 })

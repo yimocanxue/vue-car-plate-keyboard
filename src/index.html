@@ -15,8 +15,15 @@
   </style>
   <body>
     <div id="app">
-        <car-number-box></car-number-box>
-        <car-keyboard></car-keyboard>
+      <car-plate-keyboard 
+        car-number="苏E55552学"
+        active-color="#ff0000"
+        ok-btn-text="关闭"
+        v-on:tap-key="tapedKey"
+        v-on:tap-box="tapedBox"
+        v-on:tap-del="tapedDel"
+        v-on:tap-ok="tapedOk"
+      ></car-plate-keyboard>
         {{message}}
     </div>
     <!-- built files will be auto injected -->
